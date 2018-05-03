@@ -1,25 +1,16 @@
 # javascript 中!!(两个感叹号，双感叹号) 的作用
 
-----
-
+---
 title: javascript 中!!(两个感叹号，双感叹号) 的作用
-
-description: javascript 中!!(两个感叹号，双感叹号) 的作用
-
-date: 2018-5-3 9:00
-
+description: 使用 javascript 时，有时会在变量前面加上两个感叹号，这样做表示什么含义呢？Javascript 中，! 表示运算符“非”，如果变量不是布尔类型，会将变量自动转化为布尔类型，再取非，那么 用两个!! 就可以将变量转化为对应布尔值。
 categories:
+ - tutorial
+ - javascript
+tags:
+ -javascript
+---
 
-- javascript
-- 开发语言
-  tags:
-- javascript
-
-------
-
-## 
-
-# 一、 含义
+##一、 含义
 
 使用 javascript 时，有时会在变量前面加上两个感叹号，这样做表示什么含义呢？Javascript 中，! 表示运算符“非”，如果变量不是布尔类型，会将变量自动转化为布尔类型，再取非，那么 **用两个!! 就可以将变量转化为对应布尔值**。
 
