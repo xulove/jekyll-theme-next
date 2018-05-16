@@ -11,7 +11,7 @@ tags:
  - 智能合约
 ---
 
-keywords: "Solidity开发，Solidity字节数组，Solidity数据类型"
+keywords: "Solidity开发，智能合约开发，Solidity数据类型"
 
 # 一、数据类型
 
@@ -560,4 +560,3 @@ contract C {
 
 
 `string`本身是一个特殊的动态字节数组，所以它只能和`bytes`之间进行转换，不能和固定大小字节数组进行直接转换，如果是固定字节大小数组，需要将其转换为动态字节大小数组才能进行转换。
-
