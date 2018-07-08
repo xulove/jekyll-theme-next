@@ -1,0 +1,26 @@
+---
+title: 区块链技术架构分析（2）-区块数据
+description: 区块链技术架构简单分析
+ - 区块链
+ - 技术架构
+tags:
+ - 区块链
+---
+
+区块数据主要是保存交易数据，不同的系统采用的结构不同，下面以比特币的区块结构为例做介绍。
+
+比特币的交易记录会保存在数据区块之中，比特币系统中大约每10分钟会产生一个区块，每个数据区块一般包含区块头（Header）和区块体（Body）两部分，如图2-1所示。
+
+![img](https://mmbiz.qpic.cn/mmbiz_jpg/9ltY7SLLaAEtqSKydwN1Raak0mMcic08hWcol4k9EnTOibhsxaibd4lR7oUkPib6uibZhpAgWKdplZiaHF5rE2YIfvibg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)
+
+区块结构：
+
+![img](https://mmbiz.qpic.cn/mmbiz_jpg/9ltY7SLLaAEtqSKydwN1Raak0mMcic08hicPGqSfELRsBrEa0K0FmBrNxSbZ2C5ygfAnc9dz37PVDBaYSNnXphQA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)
+
+区块头的结构说明：
+
+![img](https://mmbiz.qpic.cn/mmbiz_jpg/9ltY7SLLaAEtqSKydwN1Raak0mMcic08hleAreXD37u6XDLFf9LC9pibVB3QZlGjour9VSCEsJHO57lYgtSI4DHw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1)
+
+比特币区块链格式可参考：https://blog.csdn.net/mengzaishenqiu/article/details/80340877
+
+区块链的数据结构成员分散存储在底层数据库，最终存储形式是[k,v]键值对，使用的[k,v]型底层数据库是LevelDB；与交易操作相关的数据，其呈现的集合形式是Block；如果以Block为单位链接起来，则构成更大粒度的BlockChain。
